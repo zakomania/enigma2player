@@ -8,7 +8,7 @@
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.1.1** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.1.2** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -40,7 +40,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.1.1** · Windows 10/11 (64-bit)
+**Current version: 2.1.2** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
@@ -71,7 +71,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.1.1**
+**Version actuelle : 2.1.2**
 
 ---
 
@@ -81,7 +81,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.1.1**
+**Versión actual: 2.1.2**
 
 ---
 
