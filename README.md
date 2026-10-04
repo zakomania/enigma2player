@@ -8,7 +8,7 @@
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.2.0** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.2.1** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -30,6 +30,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 - **★ Meistgesehen**: lernt deine Lieblingssender
 - Aufklappbare Bouquets mit Picons und „Jetzt läuft“, Suche über alle Bouquets, Programmnummern wie am Receiver
 - Aufnahmen vom Receiver mit **Weiterschauen**, Timer, EPG, virtuelle Fernbedienung, lokale Mitschnitte, Screenshots
+- **Stream oder Datei öffnen** (Strg+O): Stream-Links (http, rtsp, udp …) oder Video- und Musikdateien vom PC oder NAS in einem Bild abspielen
 - Automatische Receiver-Suche im Netzwerk, Anmeldung mit verschlüsseltem Passwort
 
 ---
@@ -40,7 +41,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.2.0** · Windows 10/11 (64-bit)
+**Current version: 2.2.1** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
@@ -61,6 +62,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 - **★ Most watched**: learns your favourite channels
 - Collapsible bouquets with picons and "now playing", search across all bouquets, channel numbers as on the receiver
 - Receiver recordings with **continue watching**, timers, EPG, virtual remote control, local recordings, screenshots
+- **Open stream or file** (Ctrl+O): play stream links (http, rtsp, udp …) or video and music files from your PC or NAS in a picture
 - Automatic receiver search on the network, login with encrypted password
 
 ---
@@ -71,7 +73,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.2.0**
+**Version actuelle : 2.2.1**
 
 ---
 
@@ -81,7 +83,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.2.0**
+**Versión actual: 2.2.1**
 
 ---
 
