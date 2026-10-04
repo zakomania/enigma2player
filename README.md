@@ -2,13 +2,13 @@
 
 **Deutsch** · [English](#english) · [Français](#français) · [Español](#español)
 
-**Live-TV, Multiview mit bis zu 9 Bildern, frei schwebende Bild-im-Bild-Fenster und Aufnahmen** von deinem Enigma2-Receiver (Dreambox, VU+, GigaBlue, Zgemma, Octagon … mit OpenWebif) – direkt auf dem Windows-PC.
+**Live-TV, Multiview mit bis zu 9 Bildern, frei schwebende Bild-im-Bild-Fenster und Aufnahmen** von deinem Enigma2-Receiver (VU+, GigaBlue, Zgemma, Octagon … mit OpenWebif, **Dreamboxen auch mit DreamOS**) – direkt auf dem Windows-PC.
 
 ## ⬇ Download
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.1.2** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.2.0** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -36,11 +36,11 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ## English
 
-**Live TV, multiview with up to 9 pictures, floating picture-in-picture windows and recordings** from your Enigma2 receiver (Dreambox, VU+, GigaBlue, Zgemma, Octagon … with OpenWebif) – right on your Windows PC.
+**Live TV, multiview with up to 9 pictures, floating picture-in-picture windows and recordings** from your Enigma2 receiver (VU+, GigaBlue, Zgemma, Octagon … with OpenWebif, **Dreamboxes including DreamOS**) – right on your Windows PC.
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.1.2** · Windows 10/11 (64-bit)
+**Current version: 2.2.0** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
@@ -67,21 +67,21 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ## Français
 
-**TV en direct, multiview jusqu'à 9 images, fenêtres image dans l'image et enregistrements** de votre récepteur Enigma2 (avec OpenWebif) – directement sur votre PC Windows. Interface en français, mises à jour automatiques, Windows 10/11 (64 bits), sans droits d'administrateur.
+**TV en direct, multiview jusqu'à 9 images, fenêtres image dans l'image et enregistrements** de votre récepteur Enigma2 (avec OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows. Interface en français, mises à jour automatiques, Windows 10/11 (64 bits), sans droits d'administrateur.
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.1.2**
+**Version actuelle : 2.2.0**
 
 ---
 
 ## Español
 
-**TV en directo, multiview de hasta 9 imágenes, ventanas de imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif) – directamente en tu PC con Windows. Interfaz en español, actualizaciones automáticas, Windows 10/11 (64 bits), sin derechos de administrador.
+**TV en directo, multiview de hasta 9 imágenes, ventanas de imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif o Dreambox, incluido DreamOS) – directamente en tu PC con Windows. Interfaz en español, actualizaciones automáticas, Windows 10/11 (64 bits), sin derechos de administrador.
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.1.2**
+**Versión actual: 2.2.0**
 
 ---
 
@@ -104,5 +104,5 @@ Erstellt von / Created by **Zakomania** · zakomania@gmail.com
 Weitergabe nur unverändert und kostenlos (siehe Nutzungsbedingungen im Installer). Enigma2 Player is freeware –
 free to use, may only be passed on unmodified and free of charge (see the terms of use in the installer).
 
-„Enigma2“, „Dreambox“, „VU+“ usw. sind Marken ihrer jeweiligen Inhaber. Das Programm nutzt die offene Schnittstelle OpenWebif.
-"Enigma2", "Dreambox", "VU+" etc. are trademarks of their respective owners. The program uses the open OpenWebif interface.
+„Enigma2“, „Dreambox“, „VU+“ usw. sind Marken ihrer jeweiligen Inhaber. Das Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
+"Enigma2", "Dreambox", "VU+" etc. are trademarks of their respective owners. The program uses the receivers' web interfaces (OpenWebif or the Dreambox web interface).
