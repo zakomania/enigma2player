@@ -8,7 +8,7 @@
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.3.1** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.4.0** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -16,6 +16,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 - Windows 10/11 (64 Bit), alles Nötige (inkl. Videowiedergabe) ist enthalten, keine Administratorrechte nötig.
 - Ist das Programm schon installiert, aktualisiert der Installer es einfach – Einstellungen, Ansichten und Sitzung bleiben erhalten.
+- **Portable Version** im Installer wählbar: Programm, Einstellungen und Senderlogos in einem Ordner (z. B. USB-Stick), keine Einträge in Windows – zum Entfernen den Ordner löschen.
 - Updates findet das Programm selbst: **Hilfe → Nach Updates suchen** (oder automatisch beim Start).
 - Sprachen: Deutsch, English, Français, Español (folgt der Systemsprache, umstellbar in den Einstellungen).
 - Zeigt Windows beim ersten Start „Der Computer wurde durch Windows geschützt“: auf **Weitere Informationen** → **Trotzdem ausführen** klicken. Das erscheint bei neuen Programmen, bis Windows sie kennt.
@@ -29,7 +30,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 - **Smart-Suche**: „fußball jetzt“, „krimi heute abend“, „tatort morgen“ – durchsucht das Programm aller Sender
 - **★ Meistgesehen**: lernt deine Lieblingssender
 - Aufklappbare Bouquets mit Picons und „Jetzt läuft“, Suche über alle Bouquets, Programmnummern wie am Receiver, Senderliste wahlweise links oder rechts
-- Aufnahmen vom Receiver mit **Weiterschauen**, Timer und EPG (laufende Aufnahmen und Timer gekennzeichnet), virtuelle Fernbedienung, lokale Mitschnitte, Screenshots
+- Aufnahmen vom Receiver mit **Weiterschauen**, Timer und EPG (laufende Aufnahmen und Timer gekennzeichnet, **Timer bearbeiten** – auch eine laufende Aufnahme verlängern), virtuelle Fernbedienung, lokale Mitschnitte, Screenshots
 - **Stream oder Datei öffnen** (Strg+O): Stream-Links (http, rtsp, udp …) oder Video- und Musikdateien vom PC oder NAS in einem Bild abspielen
 - Automatische Receiver-Suche im Netzwerk, Anmeldung mit verschlüsseltem Passwort
 
@@ -39,6 +40,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 - Passwörter werden mit Windows (DPAPI) verschlüsselt gespeichert und nie ins Protokoll geschrieben.
 - Updates werden vor der Installation geprüft: Der Installer muss vollständig sein und zur veröffentlichten SHA-256-Prüfsumme passen (bei jeder Datei unter [alle Versionen](https://github.com/zakomania/enigma2player/releases) angegeben).
 - Mitgelieferte Open-Source-Bestandteile (VLC, Qt, Python …) mit Lizenztexten und maschinenlesbarer Stückliste (SBOM, CycloneDX) im Programmordner unter `Lizenzen`.
+- Sauber entfernbar: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden sollen; die portable Version hinterlässt nichts in Windows.
 
 ---
 
@@ -48,13 +50,14 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.3.1** · Windows 10/11 (64-bit)
+**Current version: 2.4.0** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
 
 - Windows 10/11 (64-bit), everything needed (including video playback) is included, no administrator rights required.
 - If the program is already installed, the installer simply updates it – settings, views and session are kept.
+- **Portable version** selectable in the installer: program, settings and channel logos in one folder (e.g. USB stick), no entries in Windows – to remove it, delete the folder.
 - The program finds updates itself: **Help → Check for updates** (or automatically at startup).
 - Languages: German, English, French, Spanish (follows the system language, can be changed in the settings).
 - If Windows shows "Windows protected your PC" on first start: click **More info** → **Run anyway**. Windows shows this for new programs until it knows them.
@@ -68,7 +71,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 - **Smart search**: "football now", "crime tonight", "movie tomorrow" – searches the TV guide of all channels
 - **★ Most watched**: learns your favourite channels
 - Collapsible bouquets with picons and "now playing", search across all bouquets, channel numbers as on the receiver, channel list on the left or right
-- Receiver recordings with **continue watching**, timers and EPG (running recordings and timers marked), virtual remote control, local recordings, screenshots
+- Receiver recordings with **continue watching**, timers and EPG (running recordings and timers marked, **edit timers** – even extend a running recording), virtual remote control, local recordings, screenshots
 - **Open stream or file** (Ctrl+O): play stream links (http, rtsp, udp …) or video and music files from your PC or NAS in a picture
 - Automatic receiver search on the network, login with encrypted password
 
@@ -78,26 +81,27 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 - Passwords are stored encrypted with Windows (DPAPI) and never written to the log.
 - Updates are verified before installation: the installer must be complete and match the published SHA-256 checksum (shown for each file under [all versions](https://github.com/zakomania/enigma2player/releases)).
 - Bundled open-source components (VLC, Qt, Python …) with license texts and a machine-readable bill of materials (SBOM, CycloneDX) in the program folder under `Lizenzen`.
+- Cleanly removable: uninstalling asks whether settings, log and channel logos should be deleted as well; the portable version leaves nothing behind in Windows.
 
 ---
 
 ## Français
 
-**TV en direct, multiview jusqu'à 9 images, fenêtres image dans l'image et enregistrements** de votre récepteur Enigma2 (avec OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows. Interface en français, mises à jour automatiques, Windows 10/11 (64 bits), sans droits d'administrateur.
+**TV en direct, multiview jusqu'à 9 images, fenêtres image dans l'image et enregistrements** de votre récepteur Enigma2 (avec OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows. Interface en français, version portable au choix, mises à jour automatiques, Windows 10/11 (64 bits), sans droits d'administrateur.
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.3.1**
+**Version actuelle : 2.4.0**
 
 ---
 
 ## Español
 
-**TV en directo, multiview de hasta 9 imágenes, ventanas de imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif o Dreambox, incluido DreamOS) – directamente en tu PC con Windows. Interfaz en español, actualizaciones automáticas, Windows 10/11 (64 bits), sin derechos de administrador.
+**TV en directo, multiview de hasta 9 imágenes, ventanas de imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif o Dreambox, incluido DreamOS) – directamente en tu PC con Windows. Interfaz en español, versión portable opcional, actualizaciones automáticas, Windows 10/11 (64 bits), sin derechos de administrador.
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.3.1**
+**Versión actual: 2.4.0**
 
 ---
 
