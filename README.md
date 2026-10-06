@@ -8,7 +8,7 @@
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.3.0** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.3.1** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -33,6 +33,13 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 - **Stream oder Datei öffnen** (Strg+O): Stream-Links (http, rtsp, udp …) oder Video- und Musikdateien vom PC oder NAS in einem Bild abspielen
 - Automatische Receiver-Suche im Netzwerk, Anmeldung mit verschlüsseltem Passwort
 
+## Sicherheit & Datenschutz
+
+- **Keine Telemetrie, kein Konto, keine Werbung.** Verbindungen gibt es nur zu deinem Receiver (bei der Receiver-Suche zu den Geräten im Heimnetz), zu Streams, die du selbst öffnest, und – einmal täglich, abschaltbar – zur Update-Prüfung.
+- Passwörter werden mit Windows (DPAPI) verschlüsselt gespeichert und nie ins Protokoll geschrieben.
+- Updates werden vor der Installation geprüft: Der Installer muss vollständig sein und zur veröffentlichten SHA-256-Prüfsumme passen (bei jeder Datei unter [alle Versionen](https://github.com/zakomania/enigma2player/releases) angegeben).
+- Mitgelieferte Open-Source-Bestandteile (VLC, Qt, Python …) mit Lizenztexten und maschinenlesbarer Stückliste (SBOM, CycloneDX) im Programmordner unter `Lizenzen`.
+
 ---
 
 ## English
@@ -41,7 +48,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.3.0** · Windows 10/11 (64-bit)
+**Current version: 2.3.1** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
@@ -65,6 +72,13 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 - **Open stream or file** (Ctrl+O): play stream links (http, rtsp, udp …) or video and music files from your PC or NAS in a picture
 - Automatic receiver search on the network, login with encrypted password
 
+**Security & privacy**
+
+- **No telemetry, no account, no ads.** Connections are only made to your receiver (during the receiver search to the devices on your home network), to streams you open yourself and – once a day, can be switched off – for the update check.
+- Passwords are stored encrypted with Windows (DPAPI) and never written to the log.
+- Updates are verified before installation: the installer must be complete and match the published SHA-256 checksum (shown for each file under [all versions](https://github.com/zakomania/enigma2player/releases)).
+- Bundled open-source components (VLC, Qt, Python …) with license texts and a machine-readable bill of materials (SBOM, CycloneDX) in the program folder under `Lizenzen`.
+
 ---
 
 ## Français
@@ -73,7 +87,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.3.0**
+**Version actuelle : 2.3.1**
 
 ---
 
@@ -83,7 +97,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.3.0**
+**Versión actual: 2.3.1**
 
 ---
 
