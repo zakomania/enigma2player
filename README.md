@@ -39,7 +39,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 - **Keine Telemetrie, kein Konto, keine Werbung.** Verbindungen gibt es nur zu deinem Receiver (bei der Receiver-Suche zu den Geräten im Heimnetz), zu Streams, die du selbst öffnest, und – einmal täglich, abschaltbar – zur Update-Prüfung.
 - Passwörter werden mit Windows (DPAPI) verschlüsselt gespeichert und nie ins Protokoll geschrieben.
 - Updates werden vor der Installation geprüft: Der Installer muss vollständig sein und zur veröffentlichten SHA-256-Prüfsumme passen (bei jeder Datei unter [alle Versionen](https://github.com/zakomania/enigma2player/releases) angegeben).
-- Mitgelieferte Open-Source-Bestandteile (VLC, Qt, Python …) mit Lizenztexten und maschinenlesbarer Stückliste (SBOM, CycloneDX) im Programmordner unter `Lizenzen`.
+- Mitgelieferte Open-Source-Bestandteile (VLC, Qt, Python …) sind im Programm unter **Hilfe → Über → Lizenzen** aufgeführt.
 - Sauber entfernbar: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden sollen; die portable Version hinterlässt nichts in Windows.
 
 ---
@@ -80,7 +80,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 - **No telemetry, no account, no ads.** Connections are only made to your receiver (during the receiver search to the devices on your home network), to streams you open yourself and – once a day, can be switched off – for the update check.
 - Passwords are stored encrypted with Windows (DPAPI) and never written to the log.
 - Updates are verified before installation: the installer must be complete and match the published SHA-256 checksum (shown for each file under [all versions](https://github.com/zakomania/enigma2player/releases)).
-- Bundled open-source components (VLC, Qt, Python …) with license texts and a machine-readable bill of materials (SBOM, CycloneDX) in the program folder under `Lizenzen`.
+- Bundled open-source components (VLC, Qt, Python …) are listed in the program under **Help → About → Licenses**.
 - Cleanly removable: uninstalling asks whether settings, log and channel logos should be deleted as well; the portable version leaves nothing behind in Windows.
 
 ---
