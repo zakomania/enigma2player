@@ -8,7 +8,7 @@
 
 ### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Aktuelle Version: 2.4.0** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.5.0** · Windows 10/11 (64 Bit)
 
 Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
 
@@ -25,6 +25,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 - **Multiview**: 2, 3, 4, 6, 8 oder 9 Bilder gleichzeitig, **Bild im Bild** mit 1–8 kleinen Bildern über dem Hauptbild
 - **Ton aus genau einem Bild** – per Klick wählbar
+- **Infoleiste wie am Receiver**: Beginn und Ende mit Fortschrittsbalken, Restzeit und nächste Sendung direkt im Bild – auch im Vollbild
 - **Drag & Drop**: Sender und Aufnahmen auf Bilder ziehen, Bilder tauschen, Bilder aus dem Fenster ziehen → eigenes PiP-Fenster (immer im Vordergrund), wieder andocken
 - **Ansichten speichern**: Anordnung, Sender und Fenster unter einem Namen sichern und mit einem Tastendruck laden
 - **Smart-Suche**: „fußball jetzt“, „krimi heute abend“, „tatort morgen“ – durchsucht das Programm aller Sender
@@ -49,7 +50,7 @@ Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/
 
 ### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Current version: 2.4.0** · Windows 10/11 (64-bit)
+**Current version: 2.5.0** · Windows 10/11 (64-bit)
 
 This link never changes and always delivers the current version. Run the file – done.
 What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
@@ -65,6 +66,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 - **Multiview**: 2, 3, 4, 6, 8 or 9 pictures at once, **picture-in-picture** with 1–8 small pictures over the main picture
 - **Audio from exactly one picture** – selectable with one click
+- **Info bar like on the receiver**: start and end with a progress bar, time left and the next programme right in the picture – also in full screen
 - **Drag & drop**: drag channels and recordings onto pictures, swap pictures, drag a picture out of the window → separate PiP window (always on top), dock it again
 - **Saved views**: save the arrangement, channels and windows under a name and load them with one key press
 - **Smart search**: "football now", "crime tonight", "movie tomorrow" – searches the TV guide of all channels
@@ -89,7 +91,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Version actuelle : 2.4.0**
+**Version actuelle : 2.5.0**
 
 ---
 
@@ -99,7 +101,7 @@ What's new and older versions: [all versions](https://github.com/zakomania/enigm
 
 ### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
 
-**Versión actual: 2.4.0**
+**Versión actual: 2.5.0**
 
 ---
 
