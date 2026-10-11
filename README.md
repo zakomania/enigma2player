@@ -1,128 +1,261 @@
+<div align="center">
+
 # Enigma2 Player
+
+**Live-TV, Multiview und Aufnahmen deines Enigma2-Receivers am PC – für Windows und Linux**
+
+[![Version](https://img.shields.io/github/v/release/zakomania/enigma2player?label=Version&color=2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
+[![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-2a6fd6)](#windows)
+[![Linux x86_64](https://img.shields.io/badge/Linux-x86__64-2a6fd6)](#linux)
+[![Freeware](https://img.shields.io/badge/Lizenz-Freeware-17865a)](#lizenz-und-marken)
 
 **Deutsch** · [English](#english) · [Français](#français) · [Español](#español)
 
-**Live-TV, Multiview mit bis zu 9 Bildern, frei schwebende Bild-im-Bild-Fenster und Aufnahmen** von deinem Enigma2-Receiver (VU+, GigaBlue, Zgemma, Octagon … mit OpenWebif, **Dreamboxen auch mit DreamOS**) – direkt auf dem Windows-PC.
+</div>
 
-## ⬇ Download
+Enigma2 Player zeigt Live-TV, Radio und Aufnahmen von Enigma2-Receivern (VU+, GigaBlue, Zgemma, Octagon … mit
+OpenWebif, Dreamboxen auch mit DreamOS) direkt auf dem PC – auf Wunsch bis zu neun Sender gleichzeitig, als Bild im
+Bild oder in frei schwebenden Fenstern.
 
-### **[➜ Enigma2 Player herunterladen (neueste Version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
+## Download
 
-**Aktuelle Version: 2.5.0** · Windows 10/11 (64 Bit)
+**Aktuelle Version: 2.5.1** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
 
-Dieser Link bleibt immer gleich und liefert automatisch die aktuelle Version. Datei starten – fertig.
+| System | Datei | Hinweis |
+|---|---|---|
+| **Windows** 10 / 11 (64 Bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, normal oder portabel – VLC ist enthalten |
+| **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Eine Datei, keine Installation – VLC aus der Paketverwaltung |
 
-Neuerungen und ältere Versionen: [alle Versionen](https://github.com/zakomania/enigma2player/releases)
+Die Links bleiben immer gleich und liefern automatisch die neueste Version.
 
-- Windows 10/11 (64 Bit), alles Nötige (inkl. Videowiedergabe) ist enthalten, keine Administratorrechte nötig.
-- Ist das Programm schon installiert, aktualisiert der Installer es einfach – Einstellungen, Ansichten und Sitzung bleiben erhalten.
-- **Portable Version** im Installer wählbar: Programm, Einstellungen und Senderlogos in einem Ordner (z. B. USB-Stick), keine Einträge in Windows – zum Entfernen den Ordner löschen.
-- Updates findet das Programm selbst: **Hilfe → Nach Updates suchen** (oder automatisch beim Start).
-- Sprachen: Deutsch, English, Français, Español (folgt der Systemsprache, umstellbar in den Einstellungen).
-- Zeigt Windows beim ersten Start „Der Computer wurde durch Windows geschützt“: auf **Weitere Informationen** → **Trotzdem ausführen** klicken. Das erscheint bei neuen Programmen, bis Windows sie kennt.
+### Windows
+
+1. `Enigma2Player-Setup.exe` herunterladen und starten.
+2. Installationsart wählen: **normal** (für dieses Benutzerkonto, ohne Administratorrechte) oder **portabel**
+   (Programm, Einstellungen und Senderlogos in einem Ordner, z. B. auf einem USB-Stick, ohne Einträge in Windows).
+3. Ist das Programm schon installiert, aktualisiert der Installer es – Einstellungen, Ansichten und Sitzung bleiben.
+
+> [!NOTE]
+> Zeigt Windows beim ersten Start „Der Computer wurde durch Windows geschützt“, auf **Weitere Informationen** →
+> **Trotzdem ausführen** klicken. Diese Meldung erscheint bei neuen Programmen, bis Windows sie kennt.
+
+### Linux
+
+Läuft auf Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neueren Systemen (X11 oder Wayland). Jede Version wird
+vor der Veröffentlichung auf Ubuntu 22.04, 24.04 und 26.04, Debian 12 und 13, Fedora, openSUSE Tumbleweed und Arch
+Linux geprüft.
+
+> [!IMPORTANT]
+> **VLC muss über die Paketverwaltung installiert sein** – VLC als Snap oder Flatpak genügt nicht, weil das Programm
+> die Bibliothek libVLC des Systems verwendet.
+
+```bash
+sudo apt install vlc        # Ubuntu, Linux Mint, Debian
+sudo pacman -S vlc          # Arch Linux, Manjaro
+```
+
+**Fedora** liefert VLC ohne die Codecs vieler Fernsehsender. Deshalb VLC mit dem ffmpeg-Modul installieren und für
+alle Formate (z. B. HEVC für UHD-Sender) das vollständige ffmpeg aus [RPM Fusion](https://rpmfusion.org) nutzen:
+
+```bash
+sudo dnf install vlc vlc-plugin-ffmpeg
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+```
+
+**openSUSE:** VLC und das Paket `vlc-codecs` aus dem Packman-Repository installieren.
+
+1. `Enigma2Player-x86_64.AppImage` herunterladen.
+2. Ausführbar machen: Rechtsklick → Eigenschaften → „Als Programm ausführen“ – oder im Terminal
+   `chmod +x Enigma2Player-x86_64.AppImage`
+3. Mit Doppelklick starten oder `./Enigma2Player-x86_64.AppImage` – keine Installation, keine Root-Rechte.
+
+Einstellungen liegen in `~/.config/Enigma2Player`; für die portable Nutzung eine leere Datei `portable.ini` neben das
+AppImage legen. Meldet das AppImage, dass FUSE fehlt: `sudo apt install fuse3` – oder einmalig mit
+`--appimage-extract-and-run` starten.
 
 ## Funktionen
 
-- **Multiview**: 2, 3, 4, 6, 8 oder 9 Bilder gleichzeitig, **Bild im Bild** mit 1–8 kleinen Bildern über dem Hauptbild
-- **Ton aus genau einem Bild** – per Klick wählbar
-- **Infoleiste wie am Receiver**: Beginn und Ende mit Fortschrittsbalken, Restzeit und nächste Sendung direkt im Bild – auch im Vollbild
-- **Drag & Drop**: Sender und Aufnahmen auf Bilder ziehen, Bilder tauschen, Bilder aus dem Fenster ziehen → eigenes PiP-Fenster (immer im Vordergrund), wieder andocken
-- **Ansichten speichern**: Anordnung, Sender und Fenster unter einem Namen sichern und mit einem Tastendruck laden
-- **Smart-Suche**: „fußball jetzt“, „krimi heute abend“, „tatort morgen“ – durchsucht das Programm aller Sender
-- **★ Meistgesehen**: lernt deine Lieblingssender
-- Aufklappbare Bouquets mit Picons und „Jetzt läuft“, Suche über alle Bouquets, Programmnummern wie am Receiver, Senderliste wahlweise links oder rechts
-- Aufnahmen vom Receiver mit **Weiterschauen**, Timer und EPG (laufende Aufnahmen und Timer gekennzeichnet, **Timer bearbeiten** – auch eine laufende Aufnahme verlängern), virtuelle Fernbedienung, lokale Mitschnitte, Screenshots
-- **Stream oder Datei öffnen** (Strg+O): Stream-Links (http, rtsp, udp …) oder Video- und Musikdateien vom PC oder NAS in einem Bild abspielen
-- Automatische Receiver-Suche im Netzwerk, Anmeldung mit verschlüsseltem Passwort
+- **Multiview** mit 2, 3, 4, 6, 8 oder 9 Bildern, **Bild im Bild** mit 1 bis 8 kleinen Bildern über dem Hauptbild
+- **Bild-im-Bild-Fenster**: Bilder aus dem Fenster ziehen, frei auf dem Bildschirm verteilen (immer im Vordergrund)
+  und wieder andocken
+- **Ton aus genau einem Bild**, per Klick umschaltbar
+- **Infoleiste wie am Receiver**: Beginn und Ende mit Fortschrittsbalken, Restzeit und nächste Sendung im Bild – auch
+  im Vollbild
+- **Drag & Drop**: Sender und Aufnahmen auf ein Bild ziehen, Bilder tauschen
+- **Ansichten**: Anordnung, Sender und Fenster unter einem Namen speichern und per Tastendruck laden
+- **Smart-Suche** im Programm aller Sender, z. B. „fußball jetzt“ oder „krimi heute abend“; **★ Meistgesehen** lernt
+  deine Lieblingssender
+- **Senderliste** mit aufklappbaren Bouquets, Picons, „Jetzt läuft“ und Programmnummern wie am Receiver – links oder
+  rechts
+- **Aufnahmen** vom Receiver mit Weiterschauen und Zeitleiste; **EPG und Timer** – laufende Aufnahmen und Timer
+  gekennzeichnet, Timer bearbeiten, laufende Aufnahmen verlängern
+- **Stream oder Datei öffnen** (Strg+O): Stream-Links oder Video- und Musikdateien vom PC oder NAS abspielen
+- Virtuelle Fernbedienung, lokale Mitschnitte und Bildschirmfotos
+- **Receiver-Suche** im Netzwerk, Anmeldung mit sicher gespeichertem Passwort
+- **Updates im Programm** (Hilfe → Nach Updates suchen) · Deutsch, Englisch, Französisch und Spanisch
 
-## Sicherheit & Datenschutz
+## Systemvoraussetzungen
 
-- **Keine Telemetrie, kein Konto, keine Werbung.** Verbindungen gibt es nur zu deinem Receiver (bei der Receiver-Suche zu den Geräten im Heimnetz), zu Streams, die du selbst öffnest, und – einmal täglich, abschaltbar – zur Update-Prüfung.
-- Passwörter werden mit Windows (DPAPI) verschlüsselt gespeichert und nie ins Protokoll geschrieben.
-- Updates werden vor der Installation geprüft: Der Installer muss vollständig sein und zur veröffentlichten SHA-256-Prüfsumme passen (bei jeder Datei unter [alle Versionen](https://github.com/zakomania/enigma2player/releases) angegeben).
-- Sauber entfernbar: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden sollen; die portable Version hinterlässt nichts in Windows.
+| | Windows | Linux |
+|---|---|---|
+| Betriebssystem | Windows 10 oder 11, 64 Bit | Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neuer, x86_64 |
+| Installation | Installer, normal oder portabel, ohne Administratorrechte | AppImage, ohne Installation und ohne Root-Rechte |
+| Videowiedergabe | VLC ist enthalten | VLC aus der Paketverwaltung des Systems |
+| Einstellungen | `%APPDATA%\Enigma2Player` | `~/.config/Enigma2Player` |
+| Receiver | Enigma2 mit OpenWebif oder Dreambox-Webinterface (DreamOS) im selben Netzwerk | wie Windows |
+
+Wie viele verschiedene Sender gleichzeitig laufen, hängt von den freien Tunern des Receivers ab. Sender vom selben
+Transponder brauchen keinen zusätzlichen Tuner; ein Antennen-Symbol in der Senderliste zeigt sie an.
+
+## Sicherheit und Datenschutz
+
+- **Keine Telemetrie, kein Konto, keine Werbung.** Verbindungen gibt es nur zu deinem Receiver (bei der Suche zu den
+  Geräten im Heimnetz), zu Streams, die du selbst öffnest, und – einmal täglich, abschaltbar – zur Update-Prüfung.
+- **Passwörter** sind unter Windows verschlüsselt (DPAPI), unter Linux in einer Datei gespeichert, die nur dein
+  Benutzerkonto lesen kann, und erscheinen nie im Protokoll.
+- **Geprüfte Updates**: Installer bzw. AppImage müssen vollständig sein und zur veröffentlichten SHA-256-Prüfsumme
+  passen, sonst wird der Download verworfen. Die Prüfsummen stehen bei jedem
+  [Release](https://github.com/zakomania/enigma2player/releases/latest).
+- **Sauber entfernbar**: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden
+  sollen; die portable Version und das AppImage hinterlassen nichts außerhalb ihres Ordners bzw. der Einstellungen.
+
+## Hilfe und Kontakt
+
+Fragen, Fehlerberichte und Ideen gern per E-Mail an **zakomania@gmail.com**. Bei Fehlern hilft die Protokolldatei:
+Windows `%APPDATA%\Enigma2Player\enigma2player.log`, Linux `~/.config/Enigma2Player/enigma2player.log`.
+
+## Unterstützen
+
+Enigma2 Player ist kostenlos. Wenn er dir gefällt, freue ich mich über eine freiwillige Spende:
+**[paypal.me/zakelm](https://paypal.me/zakelm)** – auch im Programm unter Hilfe → Über → Spenden.
+
+## Lizenz und Marken
+
+© 2026 Zakomania. Alle Rechte vorbehalten. Enigma2 Player ist Freeware: kostenlos nutzbar, Weitergabe nur unverändert
+und kostenlos (Nutzungsbedingungen im Installer und im Programm unter Hilfe → Über → Lizenzen). Verwendete
+Open-Source-Bestandteile und ihre Lizenzen sind dort ebenfalls aufgeführt.
+
+„Enigma2“, „Dreambox“, „VU+“ und andere Namen sind Marken ihrer jeweiligen Inhaber. Das Programm nutzt die
+Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
 
 ---
 
 ## English
 
-**Live TV, multiview with up to 9 pictures, floating picture-in-picture windows and recordings** from your Enigma2 receiver (VU+, GigaBlue, Zgemma, Octagon … with OpenWebif, **Dreamboxes including DreamOS**) – right on your Windows PC.
+**Live TV, multiview and recordings from your Enigma2 receiver on your PC – for Windows and Linux.**
 
-### **[➜ Download Enigma2 Player (latest version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
+Enigma2 Player plays live TV, radio and recordings from Enigma2 receivers (VU+, GigaBlue, Zgemma, Octagon … with
+OpenWebif, Dreamboxes including DreamOS) right on your PC – up to nine channels at once if you like, as
+picture-in-picture or in floating windows.
 
-**Current version: 2.5.0** · Windows 10/11 (64-bit)
+### Download
 
-This link never changes and always delivers the current version. Run the file – done.
-What's new and older versions: [all versions](https://github.com/zakomania/enigma2player/releases)
+**Current version: 2.5.1** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
 
-- Windows 10/11 (64-bit), everything needed (including video playback) is included, no administrator rights required.
-- If the program is already installed, the installer simply updates it – settings, views and session are kept.
-- **Portable version** selectable in the installer: program, settings and channel logos in one folder (e.g. USB stick), no entries in Windows – to remove it, delete the folder.
-- The program finds updates itself: **Help → Check for updates** (or automatically at startup).
-- Languages: German, English, French, Spanish (follows the system language, can be changed in the settings).
-- If Windows shows "Windows protected your PC" on first start: click **More info** → **Run anyway**. Windows shows this for new programs until it knows them.
+| System | File | Note |
+|---|---|---|
+| **Windows** 10 / 11 (64-bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, standard or portable – VLC included |
+| **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Single file, no installation – VLC from your package manager |
 
-**Features**
+These links never change and always deliver the latest version.
 
-- **Multiview**: 2, 3, 4, 6, 8 or 9 pictures at once, **picture-in-picture** with 1–8 small pictures over the main picture
-- **Audio from exactly one picture** – selectable with one click
-- **Info bar like on the receiver**: start and end with a progress bar, time left and the next programme right in the picture – also in full screen
-- **Drag & drop**: drag channels and recordings onto pictures, swap pictures, drag a picture out of the window → separate PiP window (always on top), dock it again
-- **Saved views**: save the arrangement, channels and windows under a name and load them with one key press
-- **Smart search**: "football now", "crime tonight", "movie tomorrow" – searches the TV guide of all channels
-- **★ Most watched**: learns your favourite channels
-- Collapsible bouquets with picons and "now playing", search across all bouquets, channel numbers as on the receiver, channel list on the left or right
-- Receiver recordings with **continue watching**, timers and EPG (running recordings and timers marked, **edit timers** – even extend a running recording), virtual remote control, local recordings, screenshots
-- **Open stream or file** (Ctrl+O): play stream links (http, rtsp, udp …) or video and music files from your PC or NAS in a picture
-- Automatic receiver search on the network, login with encrypted password
+**Windows:** run `Enigma2Player-Setup.exe` and choose a **standard** installation (for your user account, no
+administrator rights) or a **portable** one (program, settings and channel logos in one folder, e.g. on a USB stick).
+An existing installation is updated and keeps its settings. If Windows shows "Windows protected your PC" on first
+start, click **More info** → **Run anyway**.
 
-**Security & privacy**
+**Linux** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora and newer; X11 or Wayland – every version is tested on
+Ubuntu 22.04, 24.04 and 26.04, Debian 12 and 13, Fedora, openSUSE Tumbleweed and Arch Linux before release):
 
-- **No telemetry, no account, no ads.** Connections are only made to your receiver (during the receiver search to the devices on your home network), to streams you open yourself and – once a day, can be switched off – for the update check.
-- Passwords are stored encrypted with Windows (DPAPI) and never written to the log.
-- Updates are verified before installation: the installer must be complete and match the published SHA-256 checksum (shown for each file under [all versions](https://github.com/zakomania/enigma2player/releases)).
-- Cleanly removable: uninstalling asks whether settings, log and channel logos should be deleted as well; the portable version leaves nothing behind in Windows.
+> [!IMPORTANT]
+> **VLC must be installed from your package manager** – VLC as a Snap or Flatpak is not enough, because the program
+> uses the system's libVLC library.
+
+```bash
+sudo apt install vlc        # Ubuntu, Linux Mint, Debian
+sudo pacman -S vlc          # Arch Linux, Manjaro
+```
+
+**Fedora** ships VLC without the codecs of many TV channels. Install VLC with its ffmpeg module and, for all formats
+(e.g. HEVC for UHD channels), use the full ffmpeg from [RPM Fusion](https://rpmfusion.org):
+
+```bash
+sudo dnf install vlc vlc-plugin-ffmpeg
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+```
+
+**openSUSE:** install VLC and the `vlc-codecs` package from the Packman repository.
+
+Download `Enigma2Player-x86_64.AppImage`, make it executable (right-click → Properties → "Run as a program", or
+`chmod +x Enigma2Player-x86_64.AppImage`) and double-click it – no installation, no root rights. Settings are stored
+in `~/.config/Enigma2Player`; for portable use, put an empty file named `portable.ini` next to the AppImage. If the
+AppImage reports that FUSE is missing: `sudo apt install fuse3`, or start it once with `--appimage-extract-and-run`.
+
+### Features
+
+- **Multiview** with 2, 3, 4, 6, 8 or 9 pictures, **picture-in-picture** with 1 to 8 small pictures over the main one
+- **Floating windows**: drag pictures out of the window, place them anywhere (always on top) and dock them back
+- **Audio from exactly one picture**, switched with one click
+- **Info bar like on the receiver**: start and end with a progress bar, time left and the next programme in the
+  picture – also in full screen
+- **Drag & drop** channels and recordings onto pictures, swap pictures
+- **Saved views**: layout, channels and windows under a name, loaded with one key press
+- **Smart search** across the TV guide of all channels, e.g. "football now" or "crime tonight"; **★ Most watched**
+  learns your favourite channels
+- **Channel list** with collapsible bouquets, picons, "now playing" and channel numbers as on the receiver – on the
+  left or right
+- **Recordings** with resume and seek bar; **EPG and timers** – running recordings and timers marked, edit timers,
+  extend running recordings
+- **Open stream or file** (Ctrl+O): stream links or video and music files from your PC or NAS
+- Virtual remote control, local recordings and screenshots
+- **Receiver search** on the network, login with a securely stored password
+- **Updates inside the program** (Help → Check for updates) · English, German, French and Spanish
+
+### Security and privacy
+
+- **No telemetry, no account, no ads.** Connections are made only to your receiver (during the search to the devices on
+  your home network), to streams you open yourself and – once a day, can be switched off – for the update check.
+- **Passwords** are encrypted with Windows (DPAPI); on Linux they are stored in a file only your user account can read.
+  They never appear in the log.
+- **Verified updates**: the installer or AppImage must be complete and match the published SHA-256 checksum, otherwise
+  the download is discarded. The checksums are listed with every
+  [release](https://github.com/zakomania/enigma2player/releases/latest).
+
+### Help and contact
+
+Questions, bug reports and ideas: **zakomania@gmail.com**. The log file helps with errors: Windows
+`%APPDATA%\Enigma2Player\enigma2player.log`, Linux `~/.config/Enigma2Player/enigma2player.log`.
+
+Enigma2 Player is free. If you like it, a voluntary donation is welcome: **[paypal.me/zakelm](https://paypal.me/zakelm)**.
+
+© 2026 Zakomania. All rights reserved. Enigma2 Player is freeware – free to use, may only be passed on unmodified and
+free of charge (terms of use in the installer and in the program under Help → About → Licenses). "Enigma2",
+"Dreambox", "VU+" and other names are trademarks of their respective owners.
 
 ---
 
 ## Français
 
-**TV en direct, multiview jusqu'à 9 images, fenêtres image dans l'image et enregistrements** de votre récepteur Enigma2 (avec OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows. Interface en français, version portable au choix, mises à jour automatiques, Windows 10/11 (64 bits), sans droits d'administrateur.
+**TV en direct, multiview jusqu'à 9 images, image dans l'image et enregistrements** de votre récepteur Enigma2 (avec
+OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows ou Linux. Interface en français, mises à
+jour automatiques, sans droits d'administrateur.
 
-### **[➜ Télécharger Enigma2 Player (dernière version)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
+**Version actuelle : 2.5.1**
 
-**Version actuelle : 2.5.0**
+- **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
+- **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora et plus récents) : [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – installer VLC avec le gestionnaire de paquets (`sudo apt install vlc`, pas de Snap ni de Flatpak), rendre le fichier exécutable (`chmod +x Enigma2Player-x86_64.AppImage`) et le lancer.
 
 ---
 
 ## Español
 
-**TV en directo, multiview de hasta 9 imágenes, ventanas de imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif o Dreambox, incluido DreamOS) – directamente en tu PC con Windows. Interfaz en español, versión portable opcional, actualizaciones automáticas, Windows 10/11 (64 bits), sin derechos de administrador.
+**TV en directo, multiview de hasta 9 imágenes, imagen en imagen y grabaciones** de tu receptor Enigma2 (con OpenWebif
+o Dreambox, incluido DreamOS) – directamente en tu PC con Windows o Linux. Interfaz en español, actualizaciones
+automáticas, sin derechos de administrador.
 
-### **[➜ Descargar Enigma2 Player (última versión)](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe)**
+**Versión actual: 2.5.1**
 
-**Versión actual: 2.5.0**
-
----
-
-## ❤ Unterstützen · Support
-
-Enigma2 Player ist kostenlos. Wenn er dir gefällt, freue ich mich über eine Spende – freiwillig, ohne Gegenleistung.
-Enigma2 Player is free. If you like it, a donation is welcome – voluntary, with no obligation.
-
-### **[➜ Spenden / Donate via PayPal](https://paypal.me/zakelm)**
-
-Auch im Programm: Hilfe → Über → Spenden · In the program: Help → About → Donate
-
----
-
-## Kontakt · Contact
-
-Erstellt von / Created by **Zakomania** · zakomania@gmail.com
-
-© 2026 Zakomania. Alle Rechte vorbehalten / All rights reserved. Enigma2 Player ist Freeware – kostenlos nutzbar,
-Weitergabe nur unverändert und kostenlos (siehe Nutzungsbedingungen im Installer). Enigma2 Player is freeware –
-free to use, may only be passed on unmodified and free of charge (see the terms of use in the installer).
-
-„Enigma2“, „Dreambox“, „VU+“ usw. sind Marken ihrer jeweiligen Inhaber. Das Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
-"Enigma2", "Dreambox", "VU+" etc. are trademarks of their respective owners. The program uses the receivers' web interfaces (OpenWebif or the Dreambox web interface).
+- **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
+- **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora y posteriores): [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – instala VLC con el gestor de paquetes (`sudo apt install vlc`, no Snap ni Flatpak), haz el archivo ejecutable (`chmod +x Enigma2Player-x86_64.AppImage`) y ábrelo.
