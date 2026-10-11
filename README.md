@@ -19,7 +19,7 @@ Bild oder in frei schwebenden Fenstern.
 
 ## Download
 
-**Aktuelle Version: 2.5.1** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
+**Aktuelle Version: 2.5.2** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | Datei | Hinweis |
 |---|---|---|
@@ -151,7 +151,7 @@ picture-in-picture or in floating windows.
 
 ### Download
 
-**Current version: 2.5.1** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
+**Current version: 2.5.2** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | File | Note |
 |---|---|---|
@@ -242,7 +242,7 @@ free of charge (terms of use in the installer and in the program under Help → 
 OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre PC Windows ou Linux. Interface en français, mises à
 jour automatiques, sans droits d'administrateur.
 
-**Version actuelle : 2.5.1**
+**Version actuelle : 2.5.2**
 
 - **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora et plus récents) : [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – installer VLC avec le gestionnaire de paquets (`sudo apt install vlc`, pas de Snap ni de Flatpak), rendre le fichier exécutable (`chmod +x Enigma2Player-x86_64.AppImage`) et le lancer.
@@ -255,7 +255,7 @@ jour automatiques, sans droits d'administrateur.
 o Dreambox, incluido DreamOS) – directamente en tu PC con Windows o Linux. Interfaz en español, actualizaciones
 automáticas, sin derechos de administrador.
 
-**Versión actual: 2.5.1**
+**Versión actual: 2.5.2**
 
 - **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora y posteriores): [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – instala VLC con el gestor de paquetes (`sudo apt install vlc`, no Snap ni Flatpak), haz el archivo ejecutable (`chmod +x Enigma2Player-x86_64.AppImage`) y ábrelo.
