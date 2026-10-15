@@ -12,6 +12,8 @@
 
 **Deutsch** · [English](#english) · [Français](#français) · [Español](#español)
 
+[![Enigma2 Player – neun Sender gleichzeitig und Bild im Bild, für Windows, macOS und Linux](bilder/Enigma2Player-Werbebild-de.jpg)](https://github.com/zakomania/enigma2player/releases/latest)
+
 </div>
 
 Enigma2 Player zeigt Live-TV, Radio und Aufnahmen von Enigma2-Receivern (VU+, GigaBlue, Zgemma, Octagon … mit
@@ -170,6 +172,8 @@ Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webin
 ## English
 
 **Live TV, multiview and recordings from your Enigma2 receiver on your computer – for Windows, macOS and Linux.**
+
+[![Enigma2 Player – nine channels at once and picture-in-picture, for Windows, macOS and Linux](bilder/Enigma2Player-Werbebild-en.jpg)](https://github.com/zakomania/enigma2player/releases/latest)
 
 Enigma2 Player plays live TV, radio and recordings from Enigma2 receivers (VU+, GigaBlue, Zgemma, Octagon … with
 OpenWebif, Dreamboxes including DreamOS) right on your PC or Mac – up to nine channels at once if you like, as
