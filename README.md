@@ -22,7 +22,7 @@ Bild im Bild oder in frei schwebenden Fenstern.
 
 ## Download
 
-**Aktuelle Version: 2.5.4** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
+**Aktuelle Version: 2.5.5** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | Datei | Hinweis |
 |---|---|---|
@@ -115,6 +115,8 @@ AppImage legen. Meldet das AppImage, dass FUSE fehlt: `sudo apt install fuse3` �
   gekennzeichnet, Timer bearbeiten, laufende Aufnahmen verlängern
 - **Stream oder Datei öffnen** (Strg+O, am Mac ⌘O): Stream-Links oder Video- und Musikdateien vom Computer oder NAS
   abspielen
+- **Einschlaf-Timer**: Wiedergabe nach 15 bis 90 Minuten oder am Ende der Sendung beenden – der Ton wird zuletzt
+  langsam leiser
 - Virtuelle Fernbedienung, lokale Mitschnitte und Bildschirmfotos
 - **Receiver-Suche** im Netzwerk, Anmeldung mit sicher gespeichertem Passwort
 - **Updates im Programm** (Hilfe → Nach Updates suchen) · Deutsch, Englisch, Französisch und Spanisch
@@ -181,7 +183,7 @@ picture-in-picture or in floating windows.
 
 ### Download
 
-**Current version: 2.5.4** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
+**Current version: 2.5.5** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | File | Note |
 |---|---|---|
@@ -248,6 +250,7 @@ AppImage reports that FUSE is missing: `sudo apt install fuse3`, or start it onc
 - **Recordings** with resume and seek bar; **EPG and timers** – running recordings and timers marked, edit timers,
   extend running recordings
 - **Open stream or file** (Ctrl+O, on the Mac ⌘O): stream links or video and music files from your computer or NAS
+- **Sleep timer**: stop playback after 15 to 90 minutes or at the end of the show – the sound fades out slowly
 - Virtual remote control, local recordings and screenshots
 - **Receiver search** on the network, login with a securely stored password
 - **Updates inside the program** (Help → Check for updates) · English, German, French and Spanish
@@ -285,7 +288,7 @@ free of charge (terms of use in the installer and in the program under Help → 
 OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre ordinateur Windows, macOS ou Linux. Interface en
 français, mises à jour automatiques, sans droits d'administrateur.
 
-**Version actuelle : 2.5.4**
+**Version actuelle : 2.5.5**
 
 - **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
 - **macOS 15 Sequoia ou plus récent, Mac avec puce Apple** : [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus. À la première connexion, autoriser l'accès au réseau local.
@@ -299,7 +302,7 @@ français, mises à jour automatiques, sans droits d'administrateur.
 o Dreambox, incluido DreamOS) – directamente en tu ordenador con Windows, macOS o Linux. Interfaz en español,
 actualizaciones automáticas, sin derechos de administrador.
 
-**Versión actual: 2.5.4**
+**Versión actual: 2.5.5**
 
 - **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
 - **macOS 15 Sequoia o posterior, Mac con chip de Apple**: [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido. En la primera conexión, permite el acceso a la red local.
