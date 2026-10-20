@@ -4,7 +4,7 @@
 
 **Live-TV, Multiview und Aufnahmen deines Enigma2-Receivers am Computer – für Windows, macOS und Linux**
 
-[![Version 2.5.9](https://img.shields.io/badge/Version-2.5.9-2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
+[![Version 2.5.10](https://img.shields.io/badge/Version-2.5.10-2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
 [![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-2a6fd6)](#windows)
 [![macOS 15+ Apple-Chip](https://img.shields.io/badge/macOS-15%2B%20%C2%B7%20Apple--Chip-2a6fd6)](#macos)
 [![Linux x86_64](https://img.shields.io/badge/Linux-x86__64-2a6fd6)](#linux)
@@ -22,7 +22,7 @@ Bild im Bild oder in frei schwebenden Fenstern.
 
 ## Download
 
-**Aktuelle Version: 2.5.9** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
+**Aktuelle Version: 2.5.10** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | Datei | Hinweis |
 |---|---|---|
@@ -111,6 +111,8 @@ AppImage legen. Meldet das AppImage, dass FUSE fehlt: `sudo apt install fuse3` �
   deine Lieblingssender
 - **Senderliste** mit aufklappbaren Bouquets und IPTV-Gruppen, Picons, „Jetzt läuft“ und Programmnummern wie am
   Receiver – links oder rechts
+- **Sender des Receivers**: Der Sender, der gerade am Fernseher läuft, ist in der Senderliste markiert und mit einem
+  Klick im Player – ohne zusätzlichen Tuner
 - **Aufnahmen** vom Receiver mit Coverbildern, Weiterschauen und Zeitleiste; **EPG und Timer** – laufende Aufnahmen
   und Timer gekennzeichnet, Timer bearbeiten, laufende Aufnahmen verlängern
 - **Stream oder Datei öffnen** (Strg+O, am Mac ⌘O): Stream-Links oder Video- und Musikdateien vom Computer oder NAS
@@ -185,7 +187,7 @@ picture-in-picture or in floating windows.
 
 ### Download
 
-**Current version: 2.5.9** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
+**Current version: 2.5.10** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | File | Note |
 |---|---|---|
@@ -249,6 +251,8 @@ AppImage reports that FUSE is missing: `sudo apt install fuse3`, or start it onc
   learns your favourite channels
 - **Channel list** with collapsible bouquets and IPTV groups, picons, "now playing" and channel numbers as on the
   receiver – on the left or right
+- **The receiver's channel**: the channel currently on your TV is marked in the channel list and opens in the player
+  with one click – without an additional tuner
 - **Recordings** with cover images, resume and seek bar; **EPG and timers** – running recordings and timers marked,
   edit timers, extend running recordings
 - **Open stream or file** (Ctrl+O, on the Mac ⌘O): stream links or video and music files from your computer or NAS
@@ -292,7 +296,7 @@ free of charge (terms of use in the installer and in the program under Help → 
 OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre ordinateur Windows, macOS ou Linux. Interface en
 français, mises à jour automatiques, sans droits d'administrateur.
 
-**Version actuelle : 2.5.9**
+**Version actuelle : 2.5.10**
 
 - **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
 - **macOS 15 Sequoia ou plus récent, Mac avec puce Apple** : [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus. À la première connexion, autoriser l'accès au réseau local.
@@ -306,7 +310,7 @@ français, mises à jour automatiques, sans droits d'administrateur.
 o Dreambox, incluido DreamOS) – directamente en tu ordenador con Windows, macOS o Linux. Interfaz en español,
 actualizaciones automáticas, sin derechos de administrador.
 
-**Versión actual: 2.5.9**
+**Versión actual: 2.5.10**
 
 - **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
 - **macOS 15 Sequoia o posterior, Mac con chip de Apple**: [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido. En la primera conexión, permite el acceso a la red local.
