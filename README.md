@@ -7,6 +7,7 @@
 [![Version 2.6.8](https://img.shields.io/badge/Version-2.6.8-2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
 [![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-2a6fd6)](#windows)
 [![macOS 15+ Apple-Chip](https://img.shields.io/badge/macOS-15%2B%20%C2%B7%20Apple--Chip-2a6fd6)](#macos)
+[![macOS 10.15+ Intel](https://img.shields.io/badge/macOS-10.15%2B%20%C2%B7%20Intel-2a6fd6)](#macos)
 [![Linux x86_64](https://img.shields.io/badge/Linux-x86__64-2a6fd6)](#linux)
 [![Freeware](https://img.shields.io/badge/Lizenz-Freeware-17865a)](#lizenz-und-marken)
 
@@ -28,6 +29,7 @@ Bild im Bild oder in frei schwebenden Fenstern.
 |---|---|---|
 | **Windows** 10 / 11 (64 Bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, normal oder portabel – VLC ist enthalten |
 | **macOS** 15 Sequoia oder neuer, Mac mit Apple-Chip | [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) | In „Programme“ ziehen – von Apple geprüft (notarisiert), VLC ist enthalten |
+| **macOS** 10.15 Catalina oder neuer, Mac mit Intel-Prozessor | [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) | In „Programme“ ziehen – von Apple geprüft (notarisiert), VLC ist enthalten |
 | **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Eine Datei, keine Installation – VLC aus der Paketverwaltung |
 
 Die Links bleiben immer gleich und liefern automatisch die neueste Version.
@@ -45,22 +47,24 @@ Die Links bleiben immer gleich und liefern automatisch die neueste Version.
 
 ### macOS
 
-Läuft auf jedem **Mac mit Apple-Chip** (M1 und neuer) ab **macOS 15 Sequoia**. Das Programm ist mit einer Developer ID
-signiert und von Apple geprüft (notarisiert) – macOS öffnet es ohne Warnung. VLC muss nicht installiert sein.
+Zwei Fassungen, je nach Prozessor des Macs (Apfel-Menü → Über diesen Mac → „Chip“ bzw. „Prozessor“):
 
-1. `Enigma2Player-macOS.dmg` herunterladen und öffnen.
+- **Mac mit Apple-Chip** (M1 und neuer) ab **macOS 15 Sequoia**: `Enigma2Player-macOS.dmg`
+- **Mac mit Intel-Prozessor** ab **macOS 10.15 Catalina**: `Enigma2Player-Intel-macOS.dmg`
+
+Beide sind mit einer Developer ID signiert und von Apple geprüft (notarisiert) – macOS öffnet sie ohne Warnung. VLC
+muss nicht installiert sein.
+
+1. Die passende Datei herunterladen und öffnen.
 2. **Enigma2 Player** auf den Ordner **Applications** ziehen und aus „Programme“ starten.
-3. Beim ersten Verbinden fragt macOS, ob Enigma2 Player **Geräte im lokalen Netzwerk finden** darf → **Erlauben**.
-   Ohne diese Freigabe erreicht das Programm den Receiver nicht; nachträglich unter Systemeinstellungen → Datenschutz
-   & Sicherheit → Lokales Netzwerk.
+3. Ab macOS 15 fragt macOS beim ersten Verbinden, ob Enigma2 Player **Geräte im lokalen Netzwerk finden** darf →
+   **Erlauben**. Ohne diese Freigabe erreicht das Programm den Receiver nicht; nachträglich unter Systemeinstellungen
+   → Datenschutz & Sicherheit → Lokales Netzwerk.
 
 Die Menüleiste steht wie bei jedem Mac-Programm oben am Bildschirm, die Tastenkürzel nutzen ⌘ statt Strg. Einstellungen
 liegen in `~/Library/Application Support/Enigma2Player`. Updates lädt das Programm selbst (Hilfe → Nach Updates
-suchen) und tauscht sich aus, sobald die Signatur der neuen Version geprüft ist. Entfernen: Enigma2 Player in den
-Papierkorb ziehen.
-
-> [!NOTE]
-> Macs mit Intel-Prozessor werden nicht unterstützt.
+suchen) und tauscht sich aus, sobald die Signatur der neuen Version geprüft ist – jede Fassung bleibt dabei bei ihrer
+eigenen Datei. Entfernen: Enigma2 Player in den Papierkorb ziehen.
 
 ### Linux
 
@@ -130,7 +134,7 @@ AppImage legen. Meldet das AppImage, dass FUSE fehlt: `sudo apt install fuse3` �
 
 | | Windows | macOS | Linux |
 |---|---|---|---|
-| Betriebssystem | Windows 10 oder 11, 64 Bit | macOS 15 Sequoia oder neuer, Mac mit Apple-Chip (M1 und neuer) | Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neuer, x86_64 |
+| Betriebssystem | Windows 10 oder 11, 64 Bit | macOS 15 Sequoia oder neuer, Mac mit Apple-Chip (M1 und neuer) – Intel-Mac: macOS 10.15 Catalina oder neuer | Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neuer, x86_64 |
 | Installation | Installer, normal oder portabel, ohne Administratorrechte | Abbild (.dmg), in „Programme“ ziehen – notarisiert | AppImage, ohne Installation und ohne Root-Rechte |
 | Videowiedergabe | VLC ist enthalten | VLC ist enthalten | VLC aus der Paketverwaltung des Systems |
 | Einstellungen | `%APPDATA%\Enigma2Player` | `~/Library/Application Support/Enigma2Player` | `~/.config/Enigma2Player` |
@@ -149,8 +153,9 @@ Transponder brauchen keinen zusätzlichen Tuner; ein Antennen-Symbol in der Send
   SHA-256-Prüfsumme passen, sonst wird der Download verworfen; am Mac muss zusätzlich die Signatur der neuen Version
   gültig sein und vom selben Entwickler stammen. Die Prüfsummen stehen bei jedem
   [Release](https://github.com/zakomania/enigma2player/releases/latest).
-- **macOS**: signiert mit Developer ID, von Apple notarisiert, „Hardened Runtime“ ohne Sonderberechtigungen, keine
-  Sandbox-Ausnahmen – Zugriff aufs Heimnetz und auf geschützte Ordner nur nach deiner Freigabe.
+- **macOS**: signiert mit Developer ID, von Apple notarisiert, „Hardened Runtime“ ohne Sonderberechtigungen (Intel-Mac:
+  nur die Ausnahme für die Anbindung an VLC), keine Sandbox-Ausnahmen – Zugriff aufs Heimnetz und auf geschützte Ordner
+  nur nach deiner Freigabe.
 - **Sauber entfernbar**: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden
   sollen; die portable Version und das AppImage hinterlassen nichts außerhalb ihres Ordners bzw. der Einstellungen.
 
@@ -194,6 +199,7 @@ picture-in-picture or in floating windows.
 |---|---|---|
 | **Windows** 10 / 11 (64-bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, standard or portable – VLC included |
 | **macOS** 15 Sequoia or later, Mac with Apple silicon | [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) | Drag to Applications – notarized by Apple, VLC included |
+| **macOS** 10.15 Catalina or later, Mac with Intel processor | [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) | Drag to Applications – notarized by Apple, VLC included |
 | **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Single file, no installation – VLC from your package manager |
 
 These links never change and always deliver the latest version.
@@ -203,10 +209,12 @@ administrator rights) or a **portable** one (program, settings and channel logos
 An existing installation is updated and keeps its settings. If Windows shows "Windows protected your PC" on first
 start, click **More info** → **Run anyway**.
 
-**macOS** (any Mac with Apple silicon, M1 or later, running macOS 15 Sequoia or later; Intel Macs are not supported):
-open `Enigma2Player-macOS.dmg`, drag **Enigma2 Player** to **Applications** and start it from there. It is signed with
-a Developer ID and notarized by Apple, so macOS opens it without a warning; VLC does not need to be installed. When
-you connect for the first time, macOS asks whether Enigma2 Player may **find devices on your local network** → choose
+**macOS** – two versions, depending on the Mac's processor (Apple menu → About This Mac → "Chip" or "Processor"):
+`Enigma2Player-macOS.dmg` for any Mac with Apple silicon (M1 or later) running macOS 15 Sequoia or later,
+`Enigma2Player-Intel-macOS.dmg` for Macs with an Intel processor running macOS 10.15 Catalina or later. Open the file,
+drag **Enigma2 Player** to **Applications** and start it from there. Both are signed with a Developer ID and notarized
+by Apple, so macOS opens them without a warning; VLC does not need to be installed. From macOS 15 on, when you
+connect for the first time, macOS asks whether Enigma2 Player may **find devices on your local network** → choose
 **Allow** (later: System Settings → Privacy & Security → Local Network). Settings are stored in
 `~/Library/Application Support/Enigma2Player`; updates are installed by the program itself after checking the
 signature of the new version. To remove it, drag Enigma2 Player to the Trash.
@@ -275,8 +283,9 @@ AppImage reports that FUSE is missing: `sudo apt install fuse3`, or start it onc
   checksum, otherwise the download is discarded; on the Mac the new version's signature must also be valid and come
   from the same developer. The checksums are listed with every
   [release](https://github.com/zakomania/enigma2player/releases/latest).
-- **macOS**: signed with a Developer ID, notarized by Apple, Hardened Runtime without any special entitlements – access
-  to your local network and to protected folders only with your permission.
+- **macOS**: signed with a Developer ID, notarized by Apple, Hardened Runtime without any special entitlements (Intel
+  Macs: only the exception needed to talk to VLC) – access to your local network and to protected folders only with
+  your permission.
 
 ### Help and contact
 
@@ -302,6 +311,7 @@ français, mises à jour automatiques, sans droits d'administrateur.
 
 - **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
 - **macOS 15 Sequoia ou plus récent, Mac avec puce Apple** : [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus. À la première connexion, autoriser l'accès au réseau local.
+- **macOS 10.15 Catalina ou plus récent, Mac avec processeur Intel** : [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora et plus récents) : [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – installer VLC avec le gestionnaire de paquets (`sudo apt install vlc`, pas de Snap ni de Flatpak), rendre le fichier exécutable (`chmod +x Enigma2Player-x86_64.AppImage`) et le lancer.
 
 ---
@@ -316,4 +326,5 @@ actualizaciones automáticas, sin derechos de administrador.
 
 - **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
 - **macOS 15 Sequoia o posterior, Mac con chip de Apple**: [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido. En la primera conexión, permite el acceso a la red local.
+- **macOS 10.15 Catalina o posterior, Mac con procesador Intel**: [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora y posteriores): [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – instala VLC con el gestor de paquetes (`sudo apt install vlc`, no Snap ni Flatpak), haz el archivo ejecutable (`chmod +x Enigma2Player-x86_64.AppImage`) y ábrelo.
