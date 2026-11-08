@@ -4,12 +4,10 @@
 
 **Live-TV, Multiview und Aufnahmen deines Enigma2-Receivers am Computer – für Windows, macOS und Linux**
 
-[![Version 2.6.9](https://img.shields.io/badge/Version-2.6.9-2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
+[![Version 2.6.10](https://img.shields.io/badge/Version-2.6.10-2a6fd6)](https://github.com/zakomania/enigma2player/releases/latest)
 [![Windows 10 | 11](https://img.shields.io/badge/Windows-10%20%7C%2011-2a6fd6)](#windows)
 [![macOS 15+ Apple-Chip](https://img.shields.io/badge/macOS-15%2B%20%C2%B7%20Apple--Chip-2a6fd6)](#macos)
-[![macOS 10.15+ Intel](https://img.shields.io/badge/macOS-10.15%2B%20%C2%B7%20Intel-2a6fd6)](#macos)
 [![Linux x86_64](https://img.shields.io/badge/Linux-x86__64-2a6fd6)](#linux)
-[![Raspberry Pi 4, 64 Bit](https://img.shields.io/badge/Raspberry%20Pi-4%20%C2%B7%2064%20Bit-2a6fd6)](#raspberry-pi)
 [![Freeware](https://img.shields.io/badge/Lizenz-Freeware-17865a)](#lizenz-und-marken)
 
 **Deutsch** · [English](#english) · [Français](#français) · [Español](#español)
@@ -24,15 +22,13 @@ Bild im Bild oder in frei schwebenden Fenstern.
 
 ## Download
 
-**Aktuelle Version: 2.6.9** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
+**Aktuelle Version: 2.6.10** · [Neuerungen und Prüfsummen](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | Datei | Hinweis |
 |---|---|---|
 | **Windows** 10 / 11 (64 Bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, normal oder portabel – VLC ist enthalten |
 | **macOS** 15 Sequoia oder neuer, Mac mit Apple-Chip | [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) | In „Programme“ ziehen – von Apple geprüft (notarisiert), VLC ist enthalten |
-| **macOS** 10.15 Catalina oder neuer, Mac mit Intel-Prozessor | [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) | In „Programme“ ziehen – von Apple geprüft (notarisiert), VLC ist enthalten |
 | **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Eine Datei, keine Installation – VLC aus der Paketverwaltung |
-| **Raspberry Pi** 4 mit Raspberry Pi OS (64-bit) Trixie | [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) | Eine Datei, keine Installation – VLC von Raspberry Pi OS |
 
 Die Links bleiben immer gleich und liefern automatisch die neueste Version.
 
@@ -49,30 +45,28 @@ Die Links bleiben immer gleich und liefern automatisch die neueste Version.
 
 ### macOS
 
-Zwei Fassungen, je nach Prozessor des Macs (Apfel-Menü → Über diesen Mac → „Chip“ bzw. „Prozessor“):
+Läuft auf jedem **Mac mit Apple-Chip** (M1 und neuer) ab **macOS 15 Sequoia**. Das Programm ist mit einer Developer ID
+signiert und von Apple geprüft (notarisiert) – macOS öffnet es ohne Warnung. VLC muss nicht installiert sein.
 
-- **Mac mit Apple-Chip** (M1 und neuer) ab **macOS 15 Sequoia**: `Enigma2Player-macOS.dmg`
-- **Mac mit Intel-Prozessor** ab **macOS 10.15 Catalina**: `Enigma2Player-Intel-macOS.dmg`
-
-Beide sind mit einer Developer ID signiert und von Apple geprüft (notarisiert) – macOS öffnet sie ohne Warnung. VLC
-muss nicht installiert sein.
-
-1. Die passende Datei herunterladen und öffnen.
+1. `Enigma2Player-macOS.dmg` herunterladen und öffnen.
 2. **Enigma2 Player** auf den Ordner **Applications** ziehen und aus „Programme“ starten.
-3. Ab macOS 15 fragt macOS beim ersten Verbinden, ob Enigma2 Player **Geräte im lokalen Netzwerk finden** darf →
-   **Erlauben**. Ohne diese Freigabe erreicht das Programm den Receiver nicht; nachträglich unter Systemeinstellungen
-   → Datenschutz & Sicherheit → Lokales Netzwerk.
+3. Beim ersten Verbinden fragt macOS, ob Enigma2 Player **Geräte im lokalen Netzwerk finden** darf → **Erlauben**.
+   Ohne diese Freigabe erreicht das Programm den Receiver nicht; nachträglich unter Systemeinstellungen → Datenschutz
+   & Sicherheit → Lokales Netzwerk.
 
 Die Menüleiste steht wie bei jedem Mac-Programm oben am Bildschirm, die Tastenkürzel nutzen ⌘ statt Strg. Einstellungen
 liegen in `~/Library/Application Support/Enigma2Player`. Updates lädt das Programm selbst (Hilfe → Nach Updates
-suchen) und tauscht sich aus, sobald die Signatur der neuen Version geprüft ist – jede Fassung bleibt dabei bei ihrer
-eigenen Datei. Entfernen: Enigma2 Player in den Papierkorb ziehen.
+suchen) und tauscht sich aus, sobald die Signatur der neuen Version geprüft ist. Entfernen: Enigma2 Player in den
+Papierkorb ziehen.
+
+> [!NOTE]
+> Macs mit Intel-Prozessor werden nicht unterstützt.
 
 ### Linux
 
 Läuft auf Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neueren Systemen (X11 oder Wayland). Jede Version wird
 vor der Veröffentlichung auf Ubuntu 22.04, 24.04 und 26.04, Debian 12 und 13, Fedora, openSUSE Tumbleweed und Arch
-Linux geprüft. Für den Raspberry Pi gibt es eine eigene Datei, siehe [Raspberry Pi](#raspberry-pi).
+Linux geprüft.
 
 > [!IMPORTANT]
 > **VLC muss über die Paketverwaltung installiert sein** – VLC als Snap oder Flatpak genügt nicht, weil das Programm
@@ -102,44 +96,6 @@ sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 Einstellungen liegen in `~/.config/Enigma2Player`; für die portable Nutzung eine leere Datei `portable.ini` neben das
 AppImage legen. Meldet das AppImage, dass FUSE fehlt: `sudo apt install fuse3` – oder einmalig mit
 `--appimage-extract-and-run` starten.
-
-### Raspberry Pi
-
-Läuft auf dem **Raspberry Pi 4** (getestet mit 8 GB; weniger Speicher und der Raspberry Pi 5 sind nicht getestet)
-unter **Raspberry Pi OS (64-bit) mit Desktop**, Version **Trixie** (Debian 13), am Fernseher oder Bildschirm über HDMI.
-Der Receiver muss im selben Netzwerk sein, am besten per Netzwerkkabel.
-
-> [!IMPORTANT]
-> **Nicht geeignet sind die 32-Bit-Fassung und ältere Versionen wie Bookworm** (Debian 12), ebenso Ubuntu: Dort fehlt
-> das VLC, das den Videochip des Raspberry Pi nutzt. Auf einem zu alten System sagt das Programm das beim Start.
-
-VLC ist bei Raspberry Pi OS mit Desktop schon dabei. Vor dem ersten Start das System aktualisieren:
-
-```bash
-sudo apt update
-sudo apt full-upgrade -y
-sudo apt install -y vlc
-sudo reboot
-```
-
-1. `Enigma2Player-aarch64.AppImage` auf dem Pi im Browser herunterladen und in den Ordner `~/Enigma2Player` legen:
-   `mkdir -p ~/Enigma2Player && mv ~/Downloads/Enigma2Player-aarch64.AppImage ~/Enigma2Player/`
-2. Ausführbar machen: `chmod +x ~/Enigma2Player/Enigma2Player-aarch64.AppImage`
-3. Im Dateimanager mit Doppelklick → „Ausführen“ starten oder `~/Enigma2Player/Enigma2Player-aarch64.AppImage` –
-   **nicht mit sudo**.
-
-Beim Start prüft das Programm zwei Einstellungen des Pi und fragt nach:
-
-- **Bildschirm mit 30 Hz oder weniger** (bei 4K-Fernsehern häufig): **Jetzt umstellen**, danach **Behalten** – sonst
-  stocken Bild und Ton. Die Frage kommt bei jedem Start, bis umgestellt ist oder „Nicht mehr fragen“ angehakt wird.
-  Von Hand: Himbeer-Menü → Einstellungen → Control Centre → Screens.
-- **Ton an der Kopfhörerbuchse** statt über HDMI (so ist ein frisch aufgesetzter Pi eingestellt): **Auf HDMI
-  umstellen**. Von Hand: rechte Maustaste auf das Lautsprecher-Symbol oben rechts → HDMI.
-
-Multiview: höchstens 4 Bilder, davon höchstens 2 in HD; ab 3 Bildern bleibt im Vollbild die Taskleiste oben sichtbar.
-Einstellungen und Protokoll liegen wie unter Linux in `~/.config/Enigma2Player`. Updates (Hilfe → Nach Updates
-suchen) lädt und prüft das Programm selbst und ersetzt damit das AppImage – sein Ordner muss dafür beschreibbar sein.
-Meldet das AppImage, dass FUSE fehlt: `sudo apt install -y fuse3`.
 
 ## Funktionen
 
@@ -174,7 +130,7 @@ Meldet das AppImage, dass FUSE fehlt: `sudo apt install -y fuse3`.
 
 | | Windows | macOS | Linux |
 |---|---|---|---|
-| Betriebssystem | Windows 10 oder 11, 64 Bit | macOS 15 Sequoia oder neuer, Mac mit Apple-Chip (M1 und neuer) – Intel-Mac: macOS 10.15 Catalina oder neuer | Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neuer, x86_64 – Raspberry Pi 4: Raspberry Pi OS (64-bit) Trixie |
+| Betriebssystem | Windows 10 oder 11, 64 Bit | macOS 15 Sequoia oder neuer, Mac mit Apple-Chip (M1 und neuer) | Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora und neuer, x86_64 |
 | Installation | Installer, normal oder portabel, ohne Administratorrechte | Abbild (.dmg), in „Programme“ ziehen – notarisiert | AppImage, ohne Installation und ohne Root-Rechte |
 | Videowiedergabe | VLC ist enthalten | VLC ist enthalten | VLC aus der Paketverwaltung des Systems |
 | Einstellungen | `%APPDATA%\Enigma2Player` | `~/Library/Application Support/Enigma2Player` | `~/.config/Enigma2Player` |
@@ -193,12 +149,8 @@ Transponder brauchen keinen zusätzlichen Tuner; ein Antennen-Symbol in der Send
   SHA-256-Prüfsumme passen, sonst wird der Download verworfen; am Mac muss zusätzlich die Signatur der neuen Version
   gültig sein und vom selben Entwickler stammen. Die Prüfsummen stehen bei jedem
   [Release](https://github.com/zakomania/enigma2player/releases/latest).
-- **macOS**: signiert mit Developer ID, von Apple notarisiert, „Hardened Runtime“ ohne Sonderberechtigungen (Intel-Mac:
-  nur die Ausnahme für die Anbindung an VLC), keine Sandbox-Ausnahmen – Zugriff aufs Heimnetz und auf geschützte Ordner
-  nur nach deiner Freigabe.
-- **Raspberry Pi**: Das AppImage lädt eine kleine eigene Zusatzbibliothek (`libe2pfd.so`) per `LD_PRELOAD`. Sie
-  fängt einen Fehler im Grafiktreiber ab und steht mit Prüfsumme in der Software-Stückliste; Programme, die
-  Enigma2 Player öffnet, bekommen sie nicht.
+- **macOS**: signiert mit Developer ID, von Apple notarisiert, „Hardened Runtime“ ohne Sonderberechtigungen, keine
+  Sandbox-Ausnahmen – Zugriff aufs Heimnetz und auf geschützte Ordner nur nach deiner Freigabe.
 - **Sauber entfernbar**: Die Deinstallation fragt, ob auch Einstellungen, Protokoll und Senderlogos gelöscht werden
   sollen; die portable Version und das AppImage hinterlassen nichts außerhalb ihres Ordners bzw. der Einstellungen.
 
@@ -219,8 +171,8 @@ Enigma2 Player ist kostenlos. Wenn er dir gefällt, freue ich mich über eine fr
 und kostenlos (Nutzungsbedingungen im Installer und im Programm unter Hilfe → Über → Lizenzen). Verwendete
 Open-Source-Bestandteile und ihre Lizenzen sind dort ebenfalls aufgeführt.
 
-„Enigma2“, „Dreambox“, „VU+“, „Apple“, „Mac“, „macOS“, „Raspberry Pi“ und andere Namen sind Marken ihrer jeweiligen
-Inhaber. Das Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
+„Enigma2“, „Dreambox“, „VU+“, „Apple“, „Mac“, „macOS“ und andere Namen sind Marken ihrer jeweiligen Inhaber. Das
+Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
 
 ---
 
@@ -236,15 +188,13 @@ picture-in-picture or in floating windows.
 
 ### Download
 
-**Current version: 2.6.9** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
+**Current version: 2.6.10** · [What's new and checksums](https://github.com/zakomania/enigma2player/releases/latest)
 
 | System | File | Note |
 |---|---|---|
 | **Windows** 10 / 11 (64-bit) | [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) | Installer, standard or portable – VLC included |
 | **macOS** 15 Sequoia or later, Mac with Apple silicon | [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) | Drag to Applications – notarized by Apple, VLC included |
-| **macOS** 10.15 Catalina or later, Mac with Intel processor | [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) | Drag to Applications – notarized by Apple, VLC included |
 | **Linux** x86_64 | [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) | Single file, no installation – VLC from your package manager |
-| **Raspberry Pi** 4 with Raspberry Pi OS (64-bit) Trixie | [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) | Single file, no installation – VLC from Raspberry Pi OS |
 
 These links never change and always deliver the latest version.
 
@@ -253,12 +203,10 @@ administrator rights) or a **portable** one (program, settings and channel logos
 An existing installation is updated and keeps its settings. If Windows shows "Windows protected your PC" on first
 start, click **More info** → **Run anyway**.
 
-**macOS** – two versions, depending on the Mac's processor (Apple menu → About This Mac → "Chip" or "Processor"):
-`Enigma2Player-macOS.dmg` for any Mac with Apple silicon (M1 or later) running macOS 15 Sequoia or later,
-`Enigma2Player-Intel-macOS.dmg` for Macs with an Intel processor running macOS 10.15 Catalina or later. Open the file,
-drag **Enigma2 Player** to **Applications** and start it from there. Both are signed with a Developer ID and notarized
-by Apple, so macOS opens them without a warning; VLC does not need to be installed. From macOS 15 on, when you
-connect for the first time, macOS asks whether Enigma2 Player may **find devices on your local network** → choose
+**macOS** (any Mac with Apple silicon, M1 or later, running macOS 15 Sequoia or later; Intel Macs are not supported):
+open `Enigma2Player-macOS.dmg`, drag **Enigma2 Player** to **Applications** and start it from there. It is signed with
+a Developer ID and notarized by Apple, so macOS opens it without a warning; VLC does not need to be installed. When
+you connect for the first time, macOS asks whether Enigma2 Player may **find devices on your local network** → choose
 **Allow** (later: System Settings → Privacy & Security → Local Network). Settings are stored in
 `~/Library/Application Support/Enigma2Player`; updates are installed by the program itself after checking the
 signature of the new version. To remove it, drag Enigma2 Player to the Trash.
@@ -290,37 +238,6 @@ Download `Enigma2Player-x86_64.AppImage`, make it executable (right-click → Pr
 `chmod +x Enigma2Player-x86_64.AppImage`) and double-click it – no installation, no root rights. Settings are stored
 in `~/.config/Enigma2Player`; for portable use, put an empty file named `portable.ini` next to the AppImage. If the
 AppImage reports that FUSE is missing: `sudo apt install fuse3`, or start it once with `--appimage-extract-and-run`.
-
-**Raspberry Pi** – Raspberry Pi 4 (tested with 8 GB; less memory and the Raspberry Pi 5 have not been tested),
-Raspberry Pi OS (64-bit) with desktop, version Trixie (Debian 13), TV or monitor via HDMI, receiver on the same
-network – preferably connected by network cable:
-
-> [!IMPORTANT]
-> **The 32-bit edition and older releases such as Bookworm (Debian 12) are not suitable**, nor is Ubuntu: its VLC
-> cannot use the Raspberry Pi's video chip. On a system that is too old, the program says so when it starts.
-
-VLC is already included in Raspberry Pi OS with desktop. Update the system before the first start:
-
-```bash
-sudo apt update
-sudo apt full-upgrade -y
-sudo apt install -y vlc
-sudo reboot
-```
-
-Download `Enigma2Player-aarch64.AppImage` on the Pi, move it into a folder of its own
-(`mkdir -p ~/Enigma2Player && mv ~/Downloads/Enigma2Player-aarch64.AppImage ~/Enigma2Player/`), make it executable
-(`chmod +x ~/Enigma2Player/Enigma2Player-aarch64.AppImage`) and double-click it in the file manager – do not start
-it with sudo. At startup the program checks two settings of the Pi: if the screen runs at
-30 Hz or less (common with 4K TVs), it offers to change it – choose **Change now**, then **Keep**, otherwise picture
-and sound stutter; it asks at every start until the screen is changed or "Don't ask again" is ticked (by hand:
-Raspberry menu → Preferences → Control Centre → Screens). If the sound
-goes to the headphone jack instead of HDMI (the default of a freshly installed Pi), choose **Switch to HDMI** – or
-right-click the speaker icon at the top right → HDMI. Multiview: up to 4 pictures, at most 2 of them in HD; from 3
-pictures on, the desktop's taskbar at the top stays visible in full screen. Settings and the log are stored in
-`~/.config/Enigma2Player` as on Linux. Updates (Help → Check for updates) are downloaded and verified by the program,
-which then replaces the AppImage – its folder must be writable. If the AppImage reports that FUSE is missing:
-`sudo apt install -y fuse3`.
 
 ### Features
 
@@ -358,12 +275,8 @@ which then replaces the AppImage – its folder must be writable. If the AppImag
   checksum, otherwise the download is discarded; on the Mac the new version's signature must also be valid and come
   from the same developer. The checksums are listed with every
   [release](https://github.com/zakomania/enigma2player/releases/latest).
-- **macOS**: signed with a Developer ID, notarized by Apple, Hardened Runtime without any special entitlements (Intel
-  Macs: only the exception needed to talk to VLC) – access to your local network and to protected folders only with
-  your permission.
-- **Raspberry Pi**: the AppImage loads a small helper library of its own (`libe2pfd.so`) via `LD_PRELOAD`. It works
-  around a bug in the graphics driver and is listed with its checksum in the software bill of materials; programs
-  opened by Enigma2 Player do not get it.
+- **macOS**: signed with a Developer ID, notarized by Apple, Hardened Runtime without any special entitlements – access
+  to your local network and to protected folders only with your permission.
 
 ### Help and contact
 
@@ -375,7 +288,7 @@ Enigma2 Player is free. If you like it, a voluntary donation is welcome: **[payp
 
 © 2026 Zakomania. All rights reserved. Enigma2 Player is freeware – free to use, may only be passed on unmodified and
 free of charge (terms of use in the installer and in the program under Help → About → Licenses). "Enigma2",
-"Dreambox", "VU+", "Apple", "Mac", "macOS", "Raspberry Pi" and other names are trademarks of their respective owners.
+"Dreambox", "VU+", "Apple", "Mac", "macOS" and other names are trademarks of their respective owners.
 
 ---
 
@@ -385,13 +298,11 @@ free of charge (terms of use in the installer and in the program under Help → 
 OpenWebif ou Dreambox, y compris DreamOS) – directement sur votre ordinateur Windows, macOS ou Linux. Interface en
 français, mises à jour automatiques, sans droits d'administrateur.
 
-**Version actuelle : 2.6.9**
+**Version actuelle : 2.6.10**
 
 - **Windows 10 / 11 (64 bits)** : [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – installation normale ou portable, VLC inclus.
 - **macOS 15 Sequoia ou plus récent, Mac avec puce Apple** : [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus. À la première connexion, autoriser l'accès au réseau local.
-- **macOS 10.15 Catalina ou plus récent, Mac avec processeur Intel** : [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) – ouvrir, glisser dans Applications ; notarisé par Apple, VLC inclus.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora et plus récents) : [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – installer VLC avec le gestionnaire de paquets (`sudo apt install vlc`, pas de Snap ni de Flatpak), rendre le fichier exécutable (`chmod +x Enigma2Player-x86_64.AppImage`) et le lancer.
-- **Raspberry Pi 4** (Raspberry Pi OS (64-bit) avec bureau, Trixie) : [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) – mettre le système à jour (`sudo apt update && sudo apt full-upgrade -y`, puis redémarrer), rendre le fichier exécutable (`chmod +x Enigma2Player-aarch64.AppImage`) et le lancer sans sudo. Multiview : jusqu'à 4 images, dont 2 en HD au plus. Pas de son sur le téléviseur : clic droit sur l’icône du haut-parleur en haut à droite → HDMI.
 
 ---
 
@@ -401,10 +312,8 @@ français, mises à jour automatiques, sans droits d'administrateur.
 o Dreambox, incluido DreamOS) – directamente en tu ordenador con Windows, macOS o Linux. Interfaz en español,
 actualizaciones automáticas, sin derechos de administrador.
 
-**Versión actual: 2.6.9**
+**Versión actual: 2.6.10**
 
 - **Windows 10 / 11 (64 bits)**: [Enigma2Player-Setup.exe](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Setup.exe) – instalación normal o portable, VLC incluido.
 - **macOS 15 Sequoia o posterior, Mac con chip de Apple**: [Enigma2Player-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido. En la primera conexión, permite el acceso a la red local.
-- **macOS 10.15 Catalina o posterior, Mac con procesador Intel**: [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora y posteriores): [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – instala VLC con el gestor de paquetes (`sudo apt install vlc`, no Snap ni Flatpak), haz el archivo ejecutable (`chmod +x Enigma2Player-x86_64.AppImage`) y ábrelo.
-- **Raspberry Pi 4** (Raspberry Pi OS (64-bit) con escritorio, Trixie): [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) – actualiza el sistema (`sudo apt update && sudo apt full-upgrade -y` y reinicia), haz el archivo ejecutable (`chmod +x Enigma2Player-aarch64.AppImage`) y ábrelo sin sudo. Multiview: hasta 4 imágenes, como máximo 2 en HD. ¿Sin sonido en el televisor? Botón derecho sobre el icono del altavoz arriba a la derecha → HDMI.
