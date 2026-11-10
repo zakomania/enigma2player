@@ -10,6 +10,7 @@
 [![macOS 10.15+ Intel](https://img.shields.io/badge/macOS-10.15%2B%20%C2%B7%20Intel-2a6fd6)](#macos)
 [![Linux x86_64](https://img.shields.io/badge/Linux-x86__64-2a6fd6)](#linux)
 [![Raspberry Pi 4, 64 Bit](https://img.shields.io/badge/Raspberry%20Pi-4%20%C2%B7%2064%20Bit-2a6fd6)](#raspberry-pi)
+[![App für iPhone und iPad](https://img.shields.io/badge/App-iPhone%20%C2%B7%20iPad-2a6fd6)](#app-für-iphone-ipad-und-android)
 [![Freeware](https://img.shields.io/badge/Lizenz-Freeware-17865a)](#lizenz-und-marken)
 
 **Deutsch** · [English](#english) · [Français](#français) · [Español](#español)
@@ -35,6 +36,32 @@ Bild im Bild oder in frei schwebenden Fenstern.
 | **Raspberry Pi** 4 mit Raspberry Pi OS (64-bit) Trixie | [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) | Eine Datei, keine Installation – VLC von Raspberry Pi OS |
 
 Die Links bleiben immer gleich und liefern automatisch die neueste Version.
+
+### App für iPhone, iPad und Android
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/App-Store-Badge-de.svg" alt="Laden im App Store" height="54"></a>
+<br><br>
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/QR-App-Store.png" alt="QR-Code: Enigma2 Player im App Store" width="170"></a>
+<br>
+<b>iPhone und iPad</b> · ab iOS 15
+</td>
+<td align="center" width="50%">
+<b>Android</b> · demnächst bei Google Play
+<br><br>
+<img src="bilder/QR-Google-Play-bald.png" alt="QR-Code für Google Play folgt" width="170">
+<br>
+Der QR-Code folgt, sobald die App dort erhältlich ist.
+</td>
+</tr>
+</table>
+
+Die App ist **kostenlos**. **Pro** schaltet mit einem einmaligen Kauf (kein Abo) weitere Funktionen frei:
+Mehrfachansicht mit bis zu 4 Bildern auf dem Handy und 9 auf dem Tablet, Bild im Bild, Mitschnitt und Screenshot,
+Fernbedienung und Receiver-Werkzeuge. Kein Konto, keine Werbung. Du brauchst einen eigenen Enigma2-Receiver mit
+OpenWebif oder eine Dreambox im selben Netzwerk.
 
 ### Windows
 
@@ -219,7 +246,8 @@ Enigma2 Player ist kostenlos. Wenn er dir gefällt, freue ich mich über eine fr
 und kostenlos (Nutzungsbedingungen im Installer und im Programm unter Hilfe → Über → Lizenzen). Verwendete
 Open-Source-Bestandteile und ihre Lizenzen sind dort ebenfalls aufgeführt.
 
-„Enigma2“, „Dreambox“, „VU+“, „Apple“, „Mac“, „macOS“, „Raspberry Pi“ und andere Namen sind Marken ihrer jeweiligen
+„Enigma2“, „Dreambox“, „VU+“, „Apple“, „Mac“, „macOS“, „iPhone“, „iPad“,
+„App Store“, „Android“, „Google Play“, „Raspberry Pi“ und andere Namen sind Marken ihrer jeweiligen
 Inhaber. Das Programm nutzt die Webschnittstellen der Receiver (OpenWebif bzw. Dreambox-Webinterface).
 
 ---
@@ -247,6 +275,32 @@ picture-in-picture or in floating windows.
 | **Raspberry Pi** 4 with Raspberry Pi OS (64-bit) Trixie | [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) | Single file, no installation – VLC from Raspberry Pi OS |
 
 These links never change and always deliver the latest version.
+
+### App for iPhone, iPad and Android
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/App-Store-Badge-en.svg" alt="Download on the App Store" height="54"></a>
+<br><br>
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/QR-App-Store.png" alt="QR code: Enigma2 Player on the App Store" width="170"></a>
+<br>
+<b>iPhone and iPad</b> · iOS 15 or later
+</td>
+<td align="center" width="50%">
+<b>Android</b> · coming soon to Google Play
+<br><br>
+<img src="bilder/QR-Google-Play-bald.png" alt="QR code for Google Play to follow" width="170">
+<br>
+The QR code will follow as soon as the app is available there.
+</td>
+</tr>
+</table>
+
+The app is **free**. **Pro** unlocks extra features with a one-time purchase (no subscription): multiview with up
+to 4 pictures on a phone and 9 on a tablet, picture-in-picture, recording and screenshots, remote control and
+receiver tools. No account, no ads. You need your own Enigma2 receiver with OpenWebif or a Dreambox on the same
+network.
 
 **Windows:** run `Enigma2Player-Setup.exe` and choose a **standard** installation (for your user account, no
 administrator rights) or a **portable** one (program, settings and channel logos in one folder, e.g. on a USB stick).
@@ -375,7 +429,8 @@ Enigma2 Player is free. If you like it, a voluntary donation is welcome: **[payp
 
 © 2026 Zakomania. All rights reserved. Enigma2 Player is freeware – free to use, may only be passed on unmodified and
 free of charge (terms of use in the installer and in the program under Help → About → Licenses). "Enigma2",
-"Dreambox", "VU+", "Apple", "Mac", "macOS", "Raspberry Pi" and other names are trademarks of their respective owners.
+"Dreambox", "VU+", "Apple", "Mac", "macOS", "iPhone", "iPad",
+"App Store", "Android", "Google Play", "Raspberry Pi" and other names are trademarks of their respective owners.
 
 ---
 
@@ -393,6 +448,28 @@ français, mises à jour automatiques, sans droits d'administrateur.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora et plus récents) : [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – installer VLC avec le gestionnaire de paquets (`sudo apt install vlc`, pas de Snap ni de Flatpak), rendre le fichier exécutable (`chmod +x Enigma2Player-x86_64.AppImage`) et le lancer.
 - **Raspberry Pi 4** (Raspberry Pi OS (64-bit) avec bureau, Trixie) : [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) – mettre le système à jour (`sudo apt update && sudo apt full-upgrade -y`, puis redémarrer), rendre le fichier exécutable (`chmod +x Enigma2Player-aarch64.AppImage`) et le lancer sans sudo. Multiview : jusqu'à 4 images, dont 2 en HD au plus. Pas de son sur le téléviseur : clic droit sur l’icône du haut-parleur en haut à droite → HDMI.
 
+**Application pour iPhone, iPad et Android** – gratuite, avec **Pro** en achat unique (sans abonnement) :
+multiview, image dans l'image, enregistrement et captures d'écran, télécommande et outils du récepteur.
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/App-Store-Badge-fr.svg" alt="Télécharger dans l'App Store" height="54"></a>
+<br><br>
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/QR-App-Store.png" alt="Code QR : Enigma2 Player dans l'App Store" width="170"></a>
+<br>
+<b>iPhone et iPad</b> · iOS 15 ou plus récent
+</td>
+<td align="center" width="50%">
+<b>Android</b> · bientôt sur Google Play
+<br><br>
+<img src="bilder/QR-Google-Play-bald.png" alt="Code QR pour Google Play à venir" width="170">
+<br>
+Le code QR suivra dès que l'application y sera disponible.
+</td>
+</tr>
+</table>
+
 ---
 
 ## Español
@@ -408,3 +485,25 @@ actualizaciones automáticas, sin derechos de administrador.
 - **macOS 10.15 Catalina o posterior, Mac con procesador Intel**: [Enigma2Player-Intel-macOS.dmg](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-Intel-macOS.dmg) – ábrelo y arrástralo a Aplicaciones; notarizado por Apple, VLC incluido.
 - **Linux x86_64** (Ubuntu 22.04, Linux Mint 21, Debian 12, Fedora y posteriores): [Enigma2Player-x86_64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-x86_64.AppImage) – instala VLC con el gestor de paquetes (`sudo apt install vlc`, no Snap ni Flatpak), haz el archivo ejecutable (`chmod +x Enigma2Player-x86_64.AppImage`) y ábrelo.
 - **Raspberry Pi 4** (Raspberry Pi OS (64-bit) con escritorio, Trixie): [Enigma2Player-aarch64.AppImage](https://github.com/zakomania/enigma2player/releases/latest/download/Enigma2Player-aarch64.AppImage) – actualiza el sistema (`sudo apt update && sudo apt full-upgrade -y` y reinicia), haz el archivo ejecutable (`chmod +x Enigma2Player-aarch64.AppImage`) y ábrelo sin sudo. Multiview: hasta 4 imágenes, como máximo 2 en HD. ¿Sin sonido en el televisor? Botón derecho sobre el icono del altavoz arriba a la derecha → HDMI.
+
+**App para iPhone, iPad y Android** – gratuita, con **Pro** como compra única (sin suscripción): multiview,
+imagen en imagen, grabación y capturas de pantalla, mando a distancia y herramientas del receptor.
+
+<table>
+<tr>
+<td align="center" width="50%">
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/App-Store-Badge-es.svg" alt="Descargar en el App Store" height="54"></a>
+<br><br>
+<a href="https://apps.apple.com/app/id6828738788"><img src="bilder/QR-App-Store.png" alt="Código QR: Enigma2 Player en el App Store" width="170"></a>
+<br>
+<b>iPhone y iPad</b> · iOS 15 o posterior
+</td>
+<td align="center" width="50%">
+<b>Android</b> · próximamente en Google Play
+<br><br>
+<img src="bilder/QR-Google-Play-bald.png" alt="Código QR para Google Play próximamente" width="170">
+<br>
+El código QR llegará en cuanto la app esté disponible allí.
+</td>
+</tr>
+</table>
